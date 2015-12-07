@@ -8,14 +8,17 @@ import os.path
 def print_help():
 	print "Usage: realapth /path/to/file"
 
-if len(sys.argv) is not 2:
-	print_help()
+if __name__ == "__main__":
+	if len(sys.argv) is 1:
+		print_help()
 
-filepath = str(sys.argv[1])
+	else:
+		for i in xrange(1, len(sys.argv)):
+			filepath = str(sys.argv[i])
 
-if os.path.exists(filepath):
-	print os.path.abspath(filepath)
-	if os.path.islink(filepath):
-		print os.path.realpath(filepath)
-else:
-	print filepath + " does not exist!"
+			if os.path.exists(filepath):
+				print os.path.abspath(filepath)
+				if os.path.islink(filepath):
+					print os.path.realpath(filepath)
+			else:
+				print filepath + " does not exist!"
