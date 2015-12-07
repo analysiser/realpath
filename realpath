@@ -6,7 +6,7 @@ import sys
 import os.path
 
 def print_help():
-	print "Usage: realapth /path/to/file"
+	print "Usage: realpath /path/to/file"
 
 if __name__ == "__main__":
 	if len(sys.argv) is 1:
