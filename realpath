@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # To use: put this file under /usr/local/bin or where ever your $PATH is happy with...
-# The execute: 
-# 'sudo chmod +x /usr/local/bin/realpath'
+# Then execute: 'sudo chmod +x /usr/local/bin/realpath'
 import sys
 import os.path
 
