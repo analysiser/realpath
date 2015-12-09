@@ -1,10 +1,12 @@
 # realpath
+# realpath-osx
 Description: <br/>
-A Python based realpath for macosx. <br/>
+A Python based implementation of realpath for macosx. <br/>
 
 Usage: <br/>
 Check out the code to anywhere your $PATH is happy with, I personally like /usr/local/bin. <br/>
 Then perform # sudo chmod +x /usr/local/bin/realpath. <br/>
+Test with realpath <filename>, it should display the absolute path of the <filename>. If there are symbolic links to the file, both the absolute path and the 'real' absolute path are displayed.<br/>
 <br/>
 <br/>
 Rant: <br/>
